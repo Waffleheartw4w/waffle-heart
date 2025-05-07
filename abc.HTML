@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waffle Heart</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Custom Colors */
+    :root {
+      --pink: #ffc0cb;
+      --waffle-brown: #8b4513;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+    }
+
+    header {
+      background-color: var(--pink);
+      padding: 10px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--waffle-brown);
+      margin-left: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--waffle-brown);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #5c2e0f;
+    }
+
+    .hero {
+      background: linear-gradient(var(--pink), var(--white));
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: var(--waffle-brown);
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .section {
+      padding: 80px 20px;
+    }
+
+    .section h2 {
+      color: var(--waffle-brown);
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #fffaf0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .menu-item h3 {
+      color: var(--waffle-brown);
+      margin-bottom: 10px;
+    }
+
+    .map-container {
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+.welcome-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: #C94F4F;
+  text-align: center;
+  margin-top: 5px;
+}
+
+    footer {
+      background-color: var(--pink);
+      text-align: center;
+      padding: 20px;
+      color: var(--waffle-brown);
+      font-weight: 500;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+.nav-links a {
+  font-family: 'Poppins', sans-serif;  /* Change font */
+  font-size: 18px;                     /* Font size */
+  color: #4B2E2E;                      /* Normal color (dark brown) */
+  text-decoration: none;               /* Remove underline */
+  padding: 10px 15px;                  /* Space around links */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth effect */
+}
+
+.nav-links a:hover {
+  color: #C94F4F;                      /* Change color when hover (berry red) */
+  border-bottom: 2px solid #C94F4F;     /* Underline effect on hover */
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="logo">
+  <img src="file:///D:/Waffle%20Heart/WhatsApp%20Image%202025-04-23%20at%207.33.25%20PM.jpeg" alt="Waffle Heart Logo" style="height: 120px;/>
+  <img src="your-logo-url-here.png" alt="Waffle Heart Logo" style="height: 40px;" />	
+</div>
+      <nav>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+<h1 class="welcome-heading">"Welcome to Waffle Heart"</h1>
+    <p>Crafted with Love, Served with Joy</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section container">
+    <h2>Our Story</h2>
+    <p class="text-center">Waffle Heart was born from a passion for crafting the perfect waffle. From humble beginnings to a heartwarming brand, we are here to spread sweetness in every bite.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section container">
+    <h2>Gallery</h2>
+    <div class="row g-3 gallery">
+      <div class="col-md-6 col-lg-3">
+        <img src="images/waffle1.jpg" alt="Classic Waffle">
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/waffle2.jpg" alt="Chocolate Waffle">
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/waffle3.jpg" alt="Strawberry Waffle">
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/waffle4.jpg" alt="Caramel Waffle">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section container">
+    <h2>Our Delicious Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Classic Belgian Waffle</h3>
+        <p>Golden crispy outside, fluffy inside. Served with maple syrup.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Drizzle Waffle</h3>
+        <p>Drizzled with rich chocolate sauce and powdered sugar.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Strawberry Dream Waffle</h3>
+        <p>Topped with fresh strawberries and whipped cream.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Caramel Crunch Waffle</h3>
+        <p>Covered in caramel sauce and crunchy bits.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Vegan Delight Waffle</h3>
+        <p>Plant-based waffle with dairy-free toppings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section container">
+    <h2>Contact Us</h2>
+    <div class="text-center">
+      <p>Address: Om Plaza, Shivam Complex, Near Choti Puliya, R.C Vyas Colony, Bhilwara (Raj.) </p>
+      <p>Email: waffleheartw4w@gmail.com</p>
+      <p>Phone: +916376302294</p>
+    </div>
+
+    <div class="map-container mt-4">
+      <iframe
+        src="https://www.google.co.in/maps/place/25%C2%B021'44.8%22N+74%C2%B038'05.3%22E/@25.3626837,74.6345517,18.86z/data=!4m4!3m3!8m2!3d25.3624435!4d74.6347939?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Waffle Heart. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
